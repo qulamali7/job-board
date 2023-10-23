@@ -1,0 +1,140 @@
+ footer {
+     min-height: 100vh;
+     background-color: #212529;
+     @include flex;
+
+     .footer-content {
+         padding: 20px;
+         @include flex;
+         gap: 30px;
+
+         .logo {
+
+             p {
+                 color: #AAB1B7;
+                 font-size: 14px;
+                 font-weight: 400;
+                 line-height: 24px;
+             }
+
+             .footer-icons {
+                 @include flex;
+                 gap: 10px;
+
+                 .icon {
+                     width: 40px;
+                     height: 40px;
+                     border-radius: 50%;
+                     border: 1px solid #334A60;
+                     transition: 0.5s all ease;
+
+                     i {
+                         font-size: 16px;
+                         color: #334A60;
+                         padding: 10px 13px;
+                     }
+
+                     &:hover {
+                         background-color: #00D363;
+
+                     }
+                 }
+             }
+         }
+
+         .company {
+
+             h3 {
+                 font-size: 18px;
+                 font-weight: 500;
+                 color: #FFFFFF;
+                 margin-bottom: 40px;
+             }
+
+             ul {
+                 li {
+                     margin: 10px 0;
+
+                     a {
+                         color: #AAB1B7;
+                         font-weight: 400;
+                         font-size: 14px;
+
+                     }
+                 }
+             }
+         }
+
+         .category {
+
+             h3 {
+                 font-size: 18px;
+                 font-weight: 500;
+                 color: #FFFFFF;
+                 margin-bottom: 40px;
+             }
+
+             ul {
+                 li {
+                     margin: 10px 0;
+
+                     a {
+                         color: #AAB1B7;
+                         font-weight: 400;
+                         font-size: 14px;
+
+                     }
+                 }
+             }
+         }
+
+         .subscribe {
+
+             h3 {
+                 font-size: 18px;
+                 font-weight: 500;
+                 color: #FFFFFF;
+                 margin-bottom: 40px;
+             }
+
+             p {
+                 font-size: 14px;
+                 color: #AAB1B7;
+                 line-height: 26px;
+             }
+
+             form {
+                 margin-bottom: 20px;
+
+                 input {
+                     background-color: #212529;
+                     border: 1px solid #334A60;
+                     padding: 15px;
+                     border-radius: 5px;
+                     font-size: 15px
+                 }
+
+                 input:focus {
+                     outline: none;
+                 }
+
+                 button {
+                     @extend %button;
+                 }
+             }
+
+
+         }
+     }
+     @media screen and (min-width: 320px) and (max-width:576px) {
+        .footer-content{
+           flex-direction: column;
+        }
+    }
+    
+    @media screen and (min-width: 576px) and (max-width:992px) {
+        .footer-content {
+            flex-direction: column;
+         }
+    }
+ }

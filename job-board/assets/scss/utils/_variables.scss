@@ -1,0 +1,24 @@
+$main-color:#00D363;
+$title-color:#001D38;
+
+@mixin flex($align-items: center,$justify-content:center) {
+    align-items: $align-items;
+    justify-content:$justify-content;
+    display: flex;
+}
+%button{
+    background: #00D363;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    padding: 13px 29px;
+    transition: 0.5s all ease;
+    &:hover {
+        color: #00D363 !important;
+        border: 1px solid #00D363;
+        background: transparent;
+    }
+}
